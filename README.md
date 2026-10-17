@@ -2,6 +2,10 @@
 
 A RESTful Task Manager API built with **C#, ASP.NET Core and Entity Framework Core**. It supports full CRUD operations, input validation and DTOs, with interactive documentation through Swagger.
 
+**Live demo:** https://taskmanagerapi-l6ag.onrender.com/swagger
+
+> Note: hosted on a free tier, so the first load may take up to 60 seconds. Data resets when the server restarts.
+
 ## Features
 
 - Create, read, update and delete tasks (CRUD)
@@ -9,6 +13,7 @@ A RESTful Task Manager API built with **C#, ASP.NET Core and Entity Framework Co
 - DTOs to separate the API contract from the database model
 - Entity Framework Core with SQLite and migrations
 - Swagger UI for testing the API
+- Dockerized and deployed on Render
 
 ## Tech Stack
 
@@ -16,6 +21,7 @@ A RESTful Task Manager API built with **C#, ASP.NET Core and Entity Framework Co
 - ASP.NET Core Web API
 - Entity Framework Core (SQLite)
 - Swagger (Swashbuckle)
+- Docker
 
 ## API Endpoints
 
@@ -29,18 +35,13 @@ A RESTful Task Manager API built with **C#, ASP.NET Core and Entity Framework Co
 
 ## How to Run
 
-1. Clone the repository
-   git clone https://github.com/Shru300/TaskManagerApi.git
-   cd TaskManagerApi
+```bash
+git clone https://github.com/Shru300/TaskManagerApi.git
+cd TaskManagerApi
+dotnet run
+```
 
-2. Create the database
-   dotnet ef database update
-
-3. Run the app
-   dotnet run
-
-4. Open Swagger in your browser at http://localhost:5140/swagger
-   (use the port shown in your terminal)
+Open Swagger at `http://localhost:5140/swagger` (use the port shown in your terminal). The database is created automatically on startup.
 
 ## Screenshots
 
@@ -51,10 +52,8 @@ A RESTful Task Manager API built with **C#, ASP.NET Core and Entity Framework Co
 - Building REST APIs with ASP.NET Core controllers
 - Database access with EF Core and migrations
 - Model validation and the DTO pattern
+- Containerizing with Docker and deploying to the cloud
 - Using Git and GitHub
-**Live demo:** https://taskmanagerapi-l6ag.onrender.com/swagger
-
-> Note: hosted on a free tier, so the first load may take up to 60 seconds. Data resets when the server restarts.
 
 ## Author
 
