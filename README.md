@@ -52,6 +52,9 @@ A RESTful Task Manager API built with **C#, ASP.NET Core and Entity Framework Co
 - Database access with EF Core and migrations
 - Model validation and the DTO pattern
 - Using Git and GitHub
+**Live demo:** https://taskmanagerapi-l6ag.onrender.com/swagger
+
+> Note: hosted on a free tier, so the first load may take up to 60 seconds. Data resets when the server restarts.
 
 ## Author
 
